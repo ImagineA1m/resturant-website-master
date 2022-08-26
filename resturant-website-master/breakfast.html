@@ -1,0 +1,166 @@
+<html>
+    <style>
+        body{
+            background-image: url(background4.jpg);
+            background-size: cover;
+        }
+     #desc1{
+        position: absolute;
+        left:310px;
+     }
+     #button1{
+        position: absolute;
+        bottom: 545px;
+        left:310px;
+        border: none;
+        color: yellow;
+        background-color: purple;
+
+     }
+
+     #button2 {
+        border: none;
+        color: blue;
+        background-color: skyblue;
+        position: relative;
+        bottom: 20px;
+
+     }
+
+     #button3 {
+        border: none;
+        color: orange;
+        background-color: red;
+
+     }
+     #desc2{
+        position: absolute;
+        left:310px;
+        bottom: 300px;
+     }
+     
+     #desc3{
+        position: absolute;
+        left:310px;
+        bottom: 100px; 
+     }
+
+     ul{
+         list-style-type: none;
+          margin:0;
+          padding:0;
+          overflow:hidden; 
+          background-color: b;
+          position:sticky
+              
+          }
+          li{
+            float:left;
+            color: black;
+              
+          }
+          li a{
+          display: block;
+          color: rgb(23, 64, 90);
+          text-align: center;
+          padding: 12px 16px;
+          text-decoration: none;
+          text-align:center;
+          font-family:cursive;
+          
+          }
+          
+          li a:hover{
+          
+
+          background-color: lightskyblue;
+          
+          }
+        
+          #nav_bar {
+                overflow: hidden;
+                background-color: transparent;
+            }
+            #nav_bar a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            #nav_bar a:hover {
+                background-color: bisque;
+                color: #f2f2f2;
+            }
+            #nav_bar a.active {
+                background-color: black;
+                color: white;
+            }
+            .content {
+                padding: 16px;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .content {
+                padding-top: 60px;
+            }
+    </style>
+    <body>
+
+        <div id="nav_bar">
+            <ul>
+              <li><img src="hogrider.png"height="70px"></li>
+                <li>	<a href="aboutUs.html"> About us </a></li>
+             
+                 <li>	<a href="res.html">reservations</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                     </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                <li> <a href="homepage.html"> Home Page</a></li>
+        
+             </ul>
+             </div>
+     <div>
+        <input id="pancake" onclick="pancake()" type="image" src="pancakes.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        <b id="desc1">A pancake (or hot-cake, griddlecake, or flapjack) is a flat cake, often thin and round, prepared from a <br>starch-based batter that may contain eggs, milk and butter and cooked on a hot surface such as a griddle<br> or frying pan, often frying with oil or butter. It is a type of batter bread.  price:$500.99 calories:5,000</b>
+        <button id="button1" onclick="button1()">order here!</button>
+     </div>
+     <input id="oatmel" onclick="oatmel()" type="image" src="oatmeal.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+     <b id="desc2">Oatmeal is a breakfast food made from oats and liquid like water or milk. Many foods fall in and out of <br>favor as health trends come and go. Not oatmeal. This whole-grain powerhouse has been packing serious <br>nutrition and hearty flavor into breakfast for generations.    price:1,000.99 calories:10,000</b>
+     <button id="button2" onclick="button2()">order here!</button>
+     <div>
+     <div>
+        <input id="waffle" onclick="waffle()" type="image" src="waffle.jpg" name="submit" width="300px" height="200px" alt="submit"/>
+        <b id="desc3">A waffle is a leavened batter or dough cooked between two hot plates of a waffle iron, patterned to give a characteristic size, shape, and grid-like surface impression. Waffles are cooked until they become golden-brown in color, with a crispy outer texture and a soft interior.price:   5,000.99 calories:15,000</b>
+        <button id="button3" onclick="button3()">order here!</button>
+     </div>
+
+     </div>
+    </body>
+    <script>
+function button1(){
+    location.replace("checkout.html")
+}
+function button2(){
+    location.replace("checkout.html")
+}
+function button3(){
+    location.replace("checkout.html")
+}
+
+window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("nav_bar");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                     navbar.classList.remove("sticky");
+                }
+            }
+    </script>
+</html>

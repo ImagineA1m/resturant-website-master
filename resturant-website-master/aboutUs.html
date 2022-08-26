@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<head> 
+    <style>            body{
+            background-color: #008b8b;
+           }
+            body, html {
+                height: 100%;
+            }
+            .parallax {
+                background: linear-gradient(180deg,#008b8b,rgb(122, 6, 255));
+               
+                height: 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }  
+
+            ul{
+         list-style-type: none;
+          margin:0;
+          padding:0;
+          overflow:hidden; 
+          background-color: b;
+          position:sticky
+              
+          }
+          li{
+            float:left;
+            color: whitesmoke;
+              
+          }
+          li a{
+          display: block;
+          color: rgb(23, 64, 90);
+          text-align: center;
+          padding: 12px 16px;
+          text-decoration: none;
+          text-align:center;
+          font-family:cursive;
+          
+          }
+          
+          li a:hover{
+          
+
+          background-color: lightskyblue;
+          
+          }
+        
+          #nav_bar {
+                overflow: hidden;
+                background-color: transparent;
+            }
+            #nav_bar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            #nav_bar a:hover {
+                background-color: bisque;
+                color: black;
+            }
+            #nav_bar a.active {
+                background-color: black;
+                color: white;
+            }
+            .content {
+                padding: 16px;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .content {
+                padding-top: 60px;
+            }
+            
+            b {
+              font-family: 'Ibarra Real Nova', serif;
+font-family: 'Rubik', sans-serif;
+
+            }
+
+            h3{
+              text-align: center;
+            }
+            
+            .jason{
+              text-align: center;
+            }
+         
+            .kill{
+              text-align: center;
+            }
+            
+    </style>
+    <title>Document</title> 
+</head>
+<body>
+
+  <div id="nav_bar">
+    <ul>
+      <li>
+      <input
+      type="image"
+      onclick="music()"
+      height="60px"
+      width="60px"
+      src="hogrider.png"
+    >
+      </li>
+        <li>	<a href="aboutUs.html"> About us </a></li>
+     
+         <li>	<a href="res.html">reservations</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+             </a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <li> <a href="homepage.html"> Home Page</a></li>
+
+     </ul>
+     </div>
+    
+    <div class="parallax"></div>
+    
+
+ 
+      <h3><b>Hello, my name is Gilbert (Character on the right). I was in charge of creating the reservation page, the checkout page and the coffee page of this restaurant project.</b> </h3>
+    </div> 
+    <div class="jason"> 
+      <img id="tender"src="final.png" height="500px" width="800px">
+      <h3><b id="tenderdec">Hi my name is Jason (Character in the middle) and I made the drinks page. About us. And screenshots you are seeing right now</b></h3>
+    </div>
+    <div class="kill">
+
+        <img id="shrimp" src="kill.png" type="button" height="500px" width="800px">
+        <h3><b id="cavier">Hello, I'm Rod (Character on the right) and I am being killed right now.I did the menu<b></b></h3>
+        </div> 
+
+        <script>
+         function music(){
+          var music = new Audio("hogrider.mp3");
+          music.play;
+         }
+
+          window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("nav_bar");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                     navbar.classList.remove("sticky");
+                }
+            }
+
+         </script>
+</body>
+</html> 
